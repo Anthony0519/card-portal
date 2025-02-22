@@ -22,7 +22,7 @@ const swaggerDefinition = {
       description: 'Development server',
     },
     {
-        url: "https://card-api.onrender.com",
+        url: "https://screening-test-cd0f.onrender.com",
         description: 'Main Production server',
     }
   ],
