@@ -32,6 +32,11 @@ This section will guide you through the setup process required to get up and run
 
 3. Run `npm run migrate` to create the tables, You can run `npm run migrate:undo` to undo the last migration or `npm run migrate:undo:all` to undo all migrations
 
+4. Create a `seeders` folder on the `src/core` directory
+    - create your seeding files
+    - Run `npm run seed:all` to seed your datas to your database
+    - checkout `https://sequelize.org/docs/v6/other-topics/migrations/#creating-the-first-seed` for proper usage
+
 ### Development
 
 To run the application, use the command: `npm run start:dev`
