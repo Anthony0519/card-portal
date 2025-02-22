@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "name": "screening-test",
   "builds": [
     {
@@ -6,21 +7,11 @@
       "use": "@vercel/node"
     }
   ],
-  "headers": [
+  "routes": [
     {
-      "source": "/api/card-portal(.*)",
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/build/server.js"
+      "src": "/(.*)",
+      "dest": "/api/card-portal"
     }
   ]
 }
+
