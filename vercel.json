@@ -1,26 +1,26 @@
 {
-    "name": "screening-test",
-    "builds": [
-      {
-        "src": "src/server.ts",
-        "use": "@vercel/node"
-      }
-    ],
-    "headers": [
-      {
-        "source": "/api/card-portal(.*)",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          }
-        ]
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/src/server.ts"
-      }
-    ]
-  }
+  "name": "screening-test",
+  "builds": [
+    {
+      "src": "build/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/card-portal(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/build/server.js"
+    }
+  ]
+}
