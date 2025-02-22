@@ -22,7 +22,8 @@ This section will guide you through the setup process required to get up and run
 
 ### Api Documentation
 1. Swagger
-    - localhost:3344
+    - `localhost:3344` for development
+    - `https://screening-test-cd0f.onrender.com/docs/#` for production
 
 #### Database Setup
 
